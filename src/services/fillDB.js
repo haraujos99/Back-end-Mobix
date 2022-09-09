@@ -1,11 +1,11 @@
-const {iceAndFireBooks, iceAndFireCharacters} = require("../services/apiIceAndFire");
+const {iceAndFireBooks, iceAndFireCharacters} = require("./apiIceAndFire");
 const imageToBase64 = require('image-to-base64');
 const { PovCharacter } = require("../model/povCharacter.model");
 
 const booksInfo = []
 
 
-const povCharactersBD = async () =>{
+const povCharactersDB = async () =>{
   const populedPovCharacterDB = await PovCharacter.find();
 
   if(populedPovCharacterDB.length > 0){
@@ -82,13 +82,7 @@ const povCharactersBD = async () =>{
       const povCharacterCreate = await PovCharacter.create(povCharacterData);
 
     })
-
-    booksInfo.forEach((book)=>{
-
-    })
-
-
-
+    
     return console.log("DB sucessfully populed");
     
   } catch (error) {
@@ -96,7 +90,7 @@ const povCharactersBD = async () =>{
   }
 }
 
-const bookCoversBD = async () =>{
+const bookCoversDB = async () =>{
   const booksInfoWithCover = [];
 
   async function fetchImage(url) {
@@ -135,6 +129,6 @@ const bookCoversBD = async () =>{
 }
 
 module.exports = {
-  povCharactersBD,
-  bookCoversBD
+  povCharactersDB,
+  bookCoversDB
 }
