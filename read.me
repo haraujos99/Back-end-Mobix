@@ -1,0 +1,9 @@
+Explicando as rotas de requisição:
+
+- A rota /singup requer um body com objeto json indicando userName e password, para realizar o cadastro de um usuario.
+
+- A rota /singin requer um body com objeto json indicando userName e password, para conferir com os cadastrados no banco e em caso de sucesso liberar um token que será usado nas rotas seguites.
+
+- A rota /povCharacters requer o envio do token no header(Bearer) e retorna a lista de todos os personagens principais dos 10 livros.
+
+- A rota /povCharacters/id requer o envio do token no header(Bearer) e retorna as informações de um único personagem, de acordo com o id informado.

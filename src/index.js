@@ -16,7 +16,7 @@ mongoose.connect('mongodb://localhost:27017/BackendMobix',
   async(err)=>{
     if(err) throw err;
     console.log("Conected to MongoDB")
-    app.listen(process.env.PORT || 3334, ()=>{
+    app.listen(3334, ()=>{
       console.log("Server on!");
       });
 })
