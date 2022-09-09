@@ -1,0 +1,39 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "Henrique Araujo",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "filereader": "^0.10.3",
+    "image-to-base64": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.5",
+    "node-fetch": "^3.2.6",
+    "secure-password": "^4.0.0",
+    "xhr2": "^0.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haraujos99/Back-end-Mobix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haraujos99/Back-end-Mobix/issues"
+  },
+  "homepage": "https://github.com/haraujos99/Back-end-Mobix#readme",
+  "description": ""
+}
